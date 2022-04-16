@@ -1,0 +1,23 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "city": " xhjavx",
+      "population": "121",
+      "country": ""
+    },
+    {
+      "id": 2,
+      "city": "Delhi",
+      "population": "4354243",
+      "country": "India"
+    },
+    {
+      "id": 3,
+      "city": "Chennai",
+      "population": "1154243",
+      "country": "India"
+    }
+  ],
+  "countries": []
+}
