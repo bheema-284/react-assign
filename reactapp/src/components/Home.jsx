@@ -2,9 +2,50 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { TableRow } from './TableRow';
-
+import { SortAndFilterButtons } from './SortAndFilterButtons';
 export const Home = () => {
   const [cities, setCities] = useState([]);
+  function handleSort(term) {
+    if (term === 'ti') {
+      let x = cities.sort((a, b) => a.id - b.id);
+      console.log(x);
+      setCities([...x]);
+    }
+    if (term === 'tg') {
+      let x = cities.sort((a, b) => b.id - a.id);
+      console.log(x);
+      setCities([...x]);
+    }
+    if (term === 'pa') {
+      let x = cities.sort((a, b) => a.population - b.population);
+      console.log(x);
+      setCities([...x]);
+    }
+    if (term === 'pd') {
+      let x = cities.sort((a, b) => b.population - a.population);
+      console.log(x);
+      setCities([...x]);
+    }
+    if (term === 'td') {
+      let x = cities.sort((a, b) => {
+        if (a.city > b.city) return -1;
+        if (a.city < b.city) return 1;
+        return 0;
+      });
+      console.log(x);
+      setCities([...x]);
+    }
+    if (term === 'ta') {
+      let x = cities.sort((a, b) => {
+        if (a.city > b.city) return 1;
+        if (a.city < b.city) return -1;
+
+        return 0;
+      });
+      console.log(x);
+      setCities([...x]);
+    }
+  }
   useEffect(() => getData(), []);
 
   const getData = () => {
@@ -39,23 +80,27 @@ export const Home = () => {
     }
   `;
   return (
-    <MainDiv>
-      <div className="subDiv">
-        <h2>See and Analyze the data</h2>
-        <table>
-          <tr>
-            <th>id</th>
-            <th>Country</th>
-            <th>City</th>
-            <th>Population</th>
-            <th>Edit</th>
-            <th>Delete</th>
-          </tr>
-          {cities.map((el) => (
-            <TableRow key={el.id} data={el} />
-          ))}
-        </table>
-      </div>
-    </MainDiv>
+    <div className="homeContainer">
+      <h2 style={{ textAlign: 'center' }}>Home</h2>
+      <SortAndFilterButtons handleSort={handleSort} />
+      <MainDiv>
+        <div className="subDiv">
+          <h2>List of Cities Population</h2>
+          <table>
+            <tr>
+              <th>id</th>
+              <th>Country</th>
+              <th>City</th>
+              <th>Population</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            {cities.map((el) => (
+              <TableRow key={el.id} data={el} />
+            ))}
+          </table>
+        </div>
+      </MainDiv>
+    </div>
   );
 };

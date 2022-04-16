@@ -5,7 +5,7 @@ import { AddCountry } from './components/AddCountry';
 import { AddCity } from './components/AddCity';
 import { Home } from './components/Home';
 import { UpdateCity } from './components/UpdateCity';
-import { Navbar } from './components/Navbar';
+import { Navbar } from './Components/Navbar';
 
 function App() {
   return (

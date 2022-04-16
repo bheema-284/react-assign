@@ -2,9 +2,9 @@
   "cities": [
     {
       "id": 1,
-      "city": " xhjavx",
-      "population": "121",
-      "country": ""
+      "city": "Hyderabad",
+      "population": "1865721",
+      "country": "India"
     },
     {
       "id": 2,
@@ -17,7 +17,50 @@
       "city": "Chennai",
       "population": "1154243",
       "country": "India"
+    },
+    {
+      "id": 4,
+      "city": "Bangalore",
+      "population": "12996701",
+      "country": "India"
     }
   ],
-  "countries": []
+  "countries": [
+    {
+      "id": 1,
+      "city": "Hyderabad",
+      "population": "9879121",
+      "country": "India"
+    },
+    {
+      "id": 2,
+      "city": "New Jercey",
+      "population": "4354243",
+      "country": "USA"
+    },
+    {
+      "id": 3,
+      "city": "chenga",
+      "population": "1154243",
+      "country": "UK"
+    },
+    {
+      "id": 4,
+      "city": "Colambo",
+      "population": "43563211",
+      "country": "Srilanka"
+    },
+    {
+      "id": 5,
+      "city": "Dakha",
+      "population": "8253121",
+      "country": "Bangladesh"
+    },
+    {
+      "id": 6,
+      "city": "Ungaja",
+      "population": "212121",
+      "country": "Nepal"
+    }
+  ]
 }
