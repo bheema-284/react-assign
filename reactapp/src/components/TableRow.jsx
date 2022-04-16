@@ -13,12 +13,13 @@ export const TableRow = ({ data }) => {
         <td>{data.city}</td>
         <td>{data.population}</td>
         <td>
-          <button>
+          <button style={{ backgroundColor: '#cbd26c', width: '100px' }}>
             <Link to={`/update-city/${data.id}`}>Edit</Link>
           </button>
         </td>
         <td>
           <button
+            style={{ backgroundColor: '#cbd26c', width: '100px' }}
             onClick={() => {
               handleDelete(data.id);
             }}>

@@ -5,4 +5,52 @@
 #nav{
   display: flex;
   justify-content: space-around;
+  background-color: rgb(34, 224, 161);
+  padding: 10px;
+  height: 30px;
+  
+}
+#aa:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+#aa{
+  text-decoration: none;
+  color: black;
+}
+.homeContainer{
+  background-color: aqua;
+  margin-top: 0%;
+}
+.subDiv{
+  background-color: bisque;
+}
+#btns{
+  background-color: rgb(114, 77, 21);
+  margin-bottom: 5px;
+  padding: 10px;  
+  height: 30px;
+  
+  
+}
+button{
+background-color: #d26c6c;
+height: 30px;
+width: 180px;
+border-radius: 5px;
+border: transparent;
+}
+button:hover{
+background-color: rgb(224, 176, 117);
+height: 30px;
+width: 180px;
+border-radius: 5px;
+border: transparent;
+
+}
+.sortButtons{
+display: flex;
+  gap: 15px;
+  margin: auto;   
 }

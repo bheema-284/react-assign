@@ -1,4 +1,5 @@
 import axios from 'axios';
+import '../App.css';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { TableRow } from './TableRow';
@@ -58,7 +59,8 @@ export const Home = () => {
   const MainDiv = styled.div`
     margin: auto;
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid green;
+    background-color: rgb(14, 157, 50);
     width: 80%;
     .subDiv {
       border: 1px solid black;
@@ -69,7 +71,6 @@ export const Home = () => {
     table {
       border: 1px solid black;
       margin: auto;
-      /* padding: 10px; */
     }
     th {
       border: 1px solid black;
@@ -81,8 +82,11 @@ export const Home = () => {
   `;
   return (
     <div className="homeContainer">
-      <h2 style={{ textAlign: 'center' }}>Home</h2>
-      <SortAndFilterButtons handleSort={handleSort} />
+      <h2 style={{ textAlign: 'center', backgroundColor: '#cecece' }}>Home</h2>
+      <div id="btns">
+        {' '}
+        <SortAndFilterButtons handleSort={handleSort} />
+      </div>
       <MainDiv>
         <div className="subDiv">
           <h2>List of Cities Population</h2>

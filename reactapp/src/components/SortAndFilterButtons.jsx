@@ -1,3 +1,5 @@
+import '../App.css';
+
 export const SortAndFilterButtons = ({ handleSort }) => {
   return (
     <div className="sortButtons ">
