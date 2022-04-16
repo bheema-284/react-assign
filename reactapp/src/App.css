@@ -22,9 +22,12 @@
 .homeContainer{
   background-color: aqua;
   margin-top: 0%;
+  height: 530px;
 }
 .subDiv{
   background-color: bisque;
+  height: 400px;
+  overflow: scroll;
 }
 #btns{
   background-color: rgb(114, 77, 21);

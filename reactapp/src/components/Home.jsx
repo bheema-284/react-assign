@@ -88,8 +88,8 @@ export const Home = () => {
         <SortAndFilterButtons handleSort={handleSort} />
       </div>
       <MainDiv>
+        <h2 style={{ color: 'white' }}>List of Cities Population</h2>
         <div className="subDiv">
-          <h2>List of Cities Population</h2>
           <table>
             <tr>
               <th>id</th>

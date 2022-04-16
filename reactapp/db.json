@@ -14,14 +14,86 @@
     },
     {
       "id": 3,
-      "city": "Chennai",
-      "population": "1154243",
+      "city": "Indore",
+      "population": "2954243",
       "country": "India"
     },
     {
       "id": 4,
       "city": "Bangalore",
       "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 5,
+      "city": "Chennai",
+      "population": "1154243",
+      "country": "India"
+    },
+    {
+      "id": 6,
+      "city": "Puri",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 7,
+      "city": "Kolkatha",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 8,
+      "city": "Jaisalmir",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 9,
+      "city": "Kota",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 10,
+      "city": "Gwahati",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 11,
+      "city": "Noida",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 12,
+      "city": "Haryana",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 13,
+      "city": "Mumbai",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 14,
+      "city": "Nagpur",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 15,
+      "city": "Mahabubabad",
+      "population": "12996701",
+      "country": "India"
+    },
+    {
+      "id": 16,
+      "city": "Bihar",
+      "population": "33996701",
       "country": "India"
     }
   ],
